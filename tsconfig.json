@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "allowJs": true,
+    "module": "commonjs",
+    "lib": ["es6"],
+    "rootDirs": ["./", "dist"],
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "outDir": "dist",
+    "strict": true,
+    "incremental": true
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "dist", "jest.config.ts"]
+}
