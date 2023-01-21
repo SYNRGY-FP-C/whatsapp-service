@@ -14,8 +14,8 @@ const errorHandler = (
   // eslint-disable-next-line unused-imports/no-unused-vars
   next: NextFunction
 ) => {
-  logger.error(error);
-  const errorStatus = (error as AppError).status || 500;
+  logger.error(error.message);
+  const errorStatus = (error as AppError).status || 400;
   const errorMessage = error.message || "Something went wrong";
   res.status((error as AppError).status).json({
     status: errorStatus,
